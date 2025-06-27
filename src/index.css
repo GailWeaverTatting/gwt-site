@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 38 20% 92%; /* #EAE3D6 - Light beige from logo */
+  --foreground: 194 37% 20%; /* #264E4E - Dark teal from logo */
+  --muted: 38 20% 92%; /* #EAE3D6 */
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 194 37% 20%;
+  --card: 0 0% 100%;
+  --card-foreground: 194 37% 20%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 194 37% 20%; /* #264E4E - Dark teal from logo */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 48 25% 68%; /* #B0A688 - Olive/sage from logo */
+  --secondary-foreground: 194 37% 20%;
+  --accent: 194 25% 35%; /* #4A6B6B - Medium teal accent */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 194 37% 20%;
+  --radius: 0.5rem;
+  --neutral: 38 15% 88%; /* #E0D9CC - Neutral beige */
+  --dark: 194 37% 20%; /* #264E4E - Dark teal for text */
+}
+
+.dark {
+  --background: 18 13% 17%;
+  --foreground: 37 14% 96%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 18 13% 17%;
+  --popover-foreground: 37 14% 96%;
+  --card: 18 13% 17%;
+  --card-foreground: 37 14% 96%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 17 45% 39%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 35 38% 64%;
+  --secondary-foreground: 18 13% 17%;
+  --accent: 85 27% 45%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .font-serif {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-script {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+@layer components {
+  .neutral {
+    color: hsl(var(--neutral));
+  }
+  
+  .dark {
+    color: hsl(var(--dark));
+  }
+
+  .bg-neutral {
+    background-color: hsl(var(--neutral));
+  }
+
+  .bg-dark {
+    background-color: hsl(var(--dark));
+  }
+}
