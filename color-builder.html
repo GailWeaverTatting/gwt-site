@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Конструктор кольору для фриволіте</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="color-builder.js"></script>
+</head>
+<body>
+  <h1>Конструктор кольору для фриволіте</h1>
+  <div>
+    <label for="row-select">Оберіть ряд:</label>
+    <select id="row-select"></select>
+  </div>
+  <div>
+    <label for="ring-color">Колір кілець:</label>
+    <select id="ring-color"></select>
+    <input type="color" id="ring-color-picker" />
+  </div>
+  <div>
+    <label for="chain-color">Колір дуг:</label>
+    <select id="chain-color"></select>
+    <input type="color" id="chain-color-picker" />
+  </div>
+  <div>
+    <h2>Попередній перегляд</h2>
+    <div id="svg-container">
+      <!-- SVG буде вбудовано сюди -->
+    </div>
+  </div>
+</body>
+</html>
