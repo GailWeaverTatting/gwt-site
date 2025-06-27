@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gail Weaver Tatting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="GWT Logo" class="logo">
+    <div class="lang-switch">
+      <button onclick="switchLang('uk')">UA</button> | 
+      <button onclick="switchLang('en')">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Welcome Section -->
+    <section id="welcome" class="lang uk">
+      <h1>Фріволітє з душею — мереживо, що розповідає історію</h1>
+      <p>
+        Привіт! Я Гейл, і я створюю ніжне мереживо вручну за допомогою старовинної техніки фріволітє.
+        Тут ви знайдете схеми, натхнення і творчу тишу — ласкаво прошу у ваш спокійний простір для рукоділля.
+      </p>
+      <div class="cta">
+        <a href="#shop">Переглянути схеми</a>
+        <a href="https://youtube.com/@GailWeaverTatting" target="_blank">Дивитися на YouTube</a>
+        <a href="#support">Підтримати мою роботу</a>
+      </div>
+    </section>
+    <section id="welcome" class="lang en" style="display:none;">
+      <h1>Tatting with soul — lace that tells a story</h1>
+      <p>
+        Hi! I’m Gail, and I weave delicate lace by hand using the timeless technique of tatting.
+        Here, you’ll find patterns, inspiration, and creative calm — welcome to your peaceful crafting space.
+      </p>
+      <div class="cta">
+        <a href="#shop">Browse Patterns</a>
+        <a href="https://youtube.com/@GailWeaverTatting" target="_blank">Watch on YouTube</a>
+        <a href="#support">Support my work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="lang uk">
+      <h2>Вузлик за вузликом я переношу традиції в сьогодення.</h2>
+      <p>
+        Фріволітє прийшло до мене, коли я шукала спокою, і залишилося, коли я потребувала краси.
+        Тепер я ділюся цим повільним, медитативним мистецтвом із любителями мережива по всьому світу.
+        Все, що ви тут бачите, зроблено з турботою, терпінням і глибокою повагою до мистецтва.
+      </p>
+    </section>
+    <section id="about" class="lang en" style="display:none;">
+      <h2>One knot at a time, I bring tradition into today.</h2>
+      <p>
+        Tatting found me when I needed stillness — and stayed when I needed beauty.
+        Now I share this slow, meditative craft with lace lovers around the world.
+        Everything you see here is made with care, patience, and a deep respect for the art.
+      </p>
+    </section>
+
+    <!-- Додайте інші секції за аналогією (shop, free patterns, reviews, etc.) -->
+
+    <!-- Контакти -->
+    <section id="contact" class="lang uk">
+      <h2>Залишаймося на зв’язку</h2>
+      <p>Є питання, ідеї співпраці або хочете поділитися фото? Пишіть будь-коли — буду рада!</p>
+      <p>
+        📧 <a href="mailto:your@email.com">your@email.com</a><br>
+        <a href="https://instagram.com/GailWeaverTatting" target="_blank">Instagram</a> |
+        <a href="https://youtube.com/@GailWeaverTatting" target="_blank">YouTube</a> |
+        <a href="https://www.etsy.com/shop/GailWeaverTatting" target="_blank">Etsy</a> |
+        <a href="https://www.buymeacoffee.com/GailWeaverTatting" target="_blank">Buy Me a Coffee</a>
+      </p>
+    </section>
+    <section id="contact" class="lang en" style="display:none;">
+      <h2>Let’s stay in touch</h2>
+      <p>Have a question, a collaboration idea, or a photo to share? Reach out anytime — I’d love to hear from you.</p>
+      <p>
+        📧 <a href="mailto:your@email.com">your@email.com</a><br>
+        <a href="https://instagram.com/GailWeaverTatting" target="_blank">Instagram</a> |
+        <a href="https://youtube.com/@GailWeaverTatting" target="_blank">YouTube</a> |
+        <a href="https://www.etsy.com/shop/GailWeaverTatting" target="_blank">Etsy</a> |
+        <a href="https://www.buymeacoffee.com/GailWeaverTatting" target="_blank">Buy Me a Coffee</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gail Weaver Tatting</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+      document.querySelectorAll('.lang.' + lang).forEach(el => el.style.display = '');
+    }
+  </script>
+</body>
+</html>
